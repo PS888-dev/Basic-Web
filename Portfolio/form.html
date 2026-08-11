@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <form>
+        <label>
+            ชื่อ
+        <input name="ชื่อ" type="text" />
+
+        </label>
+
+        <label>
+            รหัส
+             <input รหัส="รหัส" type="รหัส" placeholder="your password"/>
+        </label>
+
+        <label>
+            email
+        <input name="email" type="email" placeholder="your email"/>    
+        </label>
+        
+        <h2>อาหาร</h2>
+        <label>
+            <input name="favaritefood" value="ข้าว" type="checkbox" checked> ข้าว
+        </label>
+        <label>
+            <input type="checkbox"> ขนม
+        </label>
+        <h2>ใช่หรือไม่</h2>
+        <label>
+            <input name="yesorno" type="radio" value="yes" > ใช่
+        </label>
+        <label>
+            <input name="yesorno" type="radio" value="maybe" >  อาจจะ
+        </label>
+        <label>    
+            <input name="yesorno" type="radio" value="no"> ไม่ใช่
+        </label>
+
+        <h2>จังหวัด</h2>
+        <select name="province">
+            <optgroup label="ภาคกลาง"></optgroup>
+            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+            <optgroup label="ภาคเหนือ"></optgroup>
+            <option value="นนทบุรี">นนทบุรี</option>
+            <optgroup label="ภาคอีสาน"></optgroup>
+            <option value="ปทุมธานี">ปทุมธานี</option>
+
+        </select>    
+        <label>
+            comment:
+        <textarea name="comment" >
+
+        </textarea>
+      </label>
+
+      <label>  /* หัวข้อรับข้อมูล */
+        <input type="checkbox" required/>
+        ยอมรับเงื่อนไข
+
+      </label>
+        <button type="ส่ง">sunmit</button>
+    </form>
+</body>
+
+</html>

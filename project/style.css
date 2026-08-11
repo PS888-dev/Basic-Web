@@ -1,0 +1,290 @@
+body {
+    font-family: 'Kanit', Arial, sans-serif;
+    min-height: 100vh;
+    background: #f48fb1;
+    /* เปลี่ยนเป็นสีที่ต้องการ */
+    margin: 0;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar {
+    background: #fce4ec;
+    border-radius: 16px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 34px;
+}
+
+.nav-left a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 8px;
+    transition: color 0.2s;
+}
+
+.nav-left a:hover {
+    color: #00bfff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-link {
+    color: #bdbdbd;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.register-btn {
+    background: #1da1f2;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.register-btn:hover {
+    background: #0d8ddb;
+}
+
+body {
+    min-height: 100vh;
+    background: #f48fb1;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 64px;
+    /* เพิ่มช่องว่างระหว่างข้อความกับรูป */
+    max-width: 1000px;
+    /* ขยายความกว้างสูงสุด */
+    margin: 0 auto;
+    /* จัดให้อยู่ตรงกลาง */
+}
+
+.text-content {
+    max-width: 420px;
+    /* ขยายพื้นที่ข้อความ */
+    font-size: 1.25rem;
+    /* เพิ่มขนาดตัวอักษร */
+}
+
+.text-content h2 {
+    color: #c75c2c;
+    margin-bottom: 16px;
+}
+
+.text-content p {
+    font-family: 'Kanit', Arial, sans-serif;
+    font-size: 1.08rem;
+    color: #ececec;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.contact-btn {
+    background: #e76f51;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 24px;
+    margin-top: 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.profile-img {
+    width: 260px;
+    /* ขยายขนาดรูป */
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff3e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+    background: #181a20;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 48px;
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-logo {
+    height: 36px;
+    width: auto;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+}
+
+
+.footer-mail {
+    display: inline-block;
+}
+
+.footer-desc {
+    color: #bdbdbd;
+    font-size: 1rem;
+}
+
+.footer {
+    position: relative; /* เพิ่มบรรทัดนี้ */
+    /* ...existing code... */
+}
+
+.footer-copyright {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.paragraph-animate span {
+    display: block;
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeInUp 1s forwards;
+    background: rgba(255,255,255,0.7);   /* พื้นหลังขาวโปร่งใส */
+    color: #222;                         /* สีตัวอักษรเข้ม */
+    border-radius: 12px;                 /* มุมโค้ง */
+    padding: 10px 18px;                  /* ระยะห่างขอบ */
+    margin-bottom: 10px;                 /* ระยะห่างแต่ละบรรทัด */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* เงาเบาๆ */
+    font-size: 1.05rem;
+}
+
+.paragraph-animate span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.paragraph-animate span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.paragraph-animate span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: footerFadeIn 1.2s ease-out 0.5s forwards;
+}
+
+@keyframes footerFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-anim {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: footerSlideIn 0.7s forwards;
+}
+
+.footer-anim:nth-child(1) { animation-delay: 0.1s; }
+.footer-anim:nth-child(2) { animation-delay: 0.25s; }
+.footer-anim:nth-child(3) { animation-delay: 0.4s; }
+.footer-anim:nth-child(4) { animation-delay: 0.55s; }
+.footer-anim:nth-child(5) { animation-delay: 0.7s; }
+
+@keyframes footerSlideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header-fade-in {
+    opacity: 0;
+    transform: translateY(-32px);
+    animation: headerFadeIn 1s ease-out 0.2s forwards;
+}
+
+@keyframes headerFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(135deg, #ff7cf4, #a3f1f1); /* ไล่สีจากซ้ายบนไปขวาล่าง */
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
