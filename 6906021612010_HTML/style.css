@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    padding-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(169, 255, 185);
+    padding: 30px 100px;
+    box-shadow: 0 2px 5px black(0, 0, 0, 0.01);
+    position: fixed;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    color: rgb(17, 16, 16);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-left: 25px;
+    position: relative;
+}
+
+.nav-links a{
+    color:  #000;
+    text-decoration: none;
+    font-size: 16px;
+    transform: color 0.3s;
+    display: block;
+}
+
+.nav-links a:hover{
+    color: rgb(13, 132, 236);
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown-menu li{
+    margin-left: 0; 
+}
+
+.dropdown-menu a{
+    padding: 10px 20px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover{
+    background-color: #f6f3f3;
+    color: #e41313;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.content{
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.home-container{
+    padding: 0 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.home .content{
+    flex: 1;
+}
+
+.home .content h3{
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.home .content span{
+    font-size: 28px;
+    color: rgb(2, 112, 75);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.home .content p{
+    font-size: 16px;
+    color: rgb(239, 161, 65);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    background: #000;
+    color: #f6f3f3;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    background: #e41313;
+}
+
+.home .image{
+    flex: 1;
+    text-align: center;
+}
+
+.home .image img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+footer{
+    background: #000;
+    color: #f6f3f3;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.about-section{
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.about-section h3{
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+ .about-section span{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+ }
+
+.about-section p{
+    font-size: 16px;
+    color: bisque;
+    line-height: 1.6;
+}
+
+.box{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 35px 40px;
+    background-color: #f6f3f3;
+    border-radius: 20px;
+    border: 1px solid #f6f3f3;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.box p{
+    font: 10px;
+    color: blanchedalmond;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.box img{
+    width: auto;
+    height:920px;
+    border-radius: 50px;
+}
+
+div.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: auto;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+div.gallery-item{
+    margin: 15px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+div.gallery-item img{
+    width: 70%;
+    height: 400px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery-item div.desc{
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0, 61, 26);
+}
+
+div.gallery-item div.price{
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+div.gallery-item:hover{
+    transform: translate(-8px);
+    transition: 0.3s;
+}
